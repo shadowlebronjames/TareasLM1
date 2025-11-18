@@ -1,0 +1,15 @@
+header, footer {
+				text-align: left;
+				background-color: #0083BF
+                }
+body {
+				text-align: center;
+				background-color: #748D99
+    }
+table, th, td{
+			border: 1px solid black;
+            }
+th{
+			background-color: #0083BF;
+			color: black;
+            }
