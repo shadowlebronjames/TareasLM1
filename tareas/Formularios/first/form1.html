@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<title>Login</title>
+	</head>
+	
+	<body>
+		<h1>Login</h1>
+		<fieldset>
+			<form id="login" action="res.html" method="get">
+				<label for="id">Id:</label> <br/>
+				<input type="number" name="id" id="id" disabled value="47"/> <br/>
+				<label for="google">Nos permites vender tus datos?</label> <br/>
+				<input type="checkbox" name="google" id="google" disabled checked/>
+				<label for="google">Acepto</label> <br/>
+				<label for="pfp">Foto de perfil:</label> <br/>
+				<input type="file" accept=".png,.jpg,.jpeg,.gif,.webp" name="pfp" id="pfp"/> <br/>
+				<label for="usuario">Nombre de usuario:</label> <br/>
+				<input type="text" name="usuario" id="usuario" required/> <br/>
+				<label for="mail">Email:</label> <br/>
+				<input type="email" name="mail" id="mail" placeholder="realemail@gmail.com"/> <br/>
+				<label for="clave">Clave:</label> <br/>
+				<input type="password" name="clave" id="clave" required maxlength="8"/> <br/>
+				<label for="bd">Fecha de nacimiento:</label> <br/>
+				<input type="date" name="bd" id="bd"/> <br/>
+				<label for="bra">Longitud de brazo:</label> <br/>
+				<input type="range" min="0.05" max="5" value="0.5" step="0.01" name="bra" id="bra" required> <br/>
+				<label for="col">Color de piel:</label> <br/>
+				<input type="color" name="col" id="col"/> <br/>
+				<hr/>
+				<input type="submit" id="btnEnviar"/>
+				<input type="reset" value="Borrar"/>
+				<button type="button" onclick="alert('asd')">Lebron James</button>
+			</form>
+		</fieldset>
+	</body>
+</HTML>
