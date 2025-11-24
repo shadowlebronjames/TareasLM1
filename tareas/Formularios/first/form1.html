@@ -14,7 +14,7 @@
 				<input type="checkbox" name="google" id="google" disabled checked/>
 				<label for="google">Acepto</label> <br/>
 				<label for="pfp">Foto de perfil:</label> <br/>
-				<input type="file" accept=".png,.jpg,.jpeg,.gif,.webp" name="pfp" id="pfp"/> <br/>
+				<input type="file" required accept=".png,.jpg,.jpeg,.gif,.webp" name="pfp" id="pfp"/> <br/>
 				<label for="usuario">Nombre de usuario:</label> <br/>
 				<input type="text" name="usuario" id="usuario" required/> <br/>
 				<label for="mail">Email:</label> <br/>
@@ -22,15 +22,60 @@
 				<label for="clave">Clave:</label> <br/>
 				<input type="password" name="clave" id="clave" required maxlength="8"/> <br/>
 				<label for="bd">Fecha de nacimiento:</label> <br/>
-				<input type="date" name="bd" id="bd"/> <br/>
+				<input type="date" name="bd" id="bd" required/> <br/>
 				<label for="bra">Longitud de brazo:</label> <br/>
 				<input type="range" min="0.05" max="5" value="0.5" step="0.01" name="bra" id="bra" required> <br/>
 				<label for="col">Color de piel:</label> <br/>
 				<input type="color" name="col" id="col"/> <br/>
+				<label for="sel">Que eres?</label> <br/>
+				<select name="sel">
+					<option value="ter">Terricola</option>
+					<option value="mar">Marciano</option>
+					<option value="bic">Bicho</option>
+					<option value="del">Delfin</option>
+				</select> <br/>
+				<label for="especia">Que especia usas para el pollo?</label> <br/>
+				<input type="radio" name="especia" value="laurel" id="laurel" checked>
+				<label for="especia">Laurel</label> <br/>
+				<input type="radio" name="especia" value="tomillo" id="tomillo">
+				<label for="especia">Tomillo</label> <br/>
+				<input type="radio" name="especia" value="romero" id="romero">
+				<label for="especia">Romero</label> <br/>
+				<input type="radio" name="especia" value="perejil" id="perejil">
+				<label for="especia">Perejil</label> <br/>
+				<input type="radio" name="especia" value="albahaca" id="albahaca">
+				<label for="especia">Albahaca</label> <br/>
+				<input type="radio" name="especia" value="otro" id="otro">
+				<label for="especia">Otro (ponlo en los comentarios!)</label> <br/>
+				<input list="fruta"/>
+				<datalist id="fruta">
+					<option value="Coco"></option>
+					<option value="Piña"></option>
+					<option value="Manzana"></option>
+					<option value="Pera"></option>
+					<option value="Orange"></option>
+					<option value="Limon"></option>
+					<option value="Abellanas"></option>
+					<option value="Azucar"></option>
+					<option value="Nocilla"></option>
+				</datalist>
 				<hr/>
 				<input type="submit" id="btnEnviar"/>
 				<input type="reset" value="Borrar"/>
 				<button type="button" onclick="alert('asd')">Lebron James</button>
+				<hr/>
+				<h1>Comentarios:</h1>
+				<textarea rows="5" cols="50" name="com" wrap="hard" placeholder="Escribe tu comentario aqui!"></textarea>
+				<br/><br/>
+				<hr/>
+				<h2>Pepe, 45 dice:</h2>
+				<p> Una pagina genial! Me encanta crear cuentas todo el rato!</p>
+				<br/>
+				<h2>JUAIHNW, 2025 dice:</h2>
+				<p>Pimenton</p>
+				<br/>
+				<h2>Padre de dos, 56 dice:</h2>
+				<p>aoiajfoejesassssssssssssssssssjogrj123409</p>
 			</form>
 		</fieldset>
 	</body>

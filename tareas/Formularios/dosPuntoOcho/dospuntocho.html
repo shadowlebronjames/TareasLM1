@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		
+	</head>
+	
+	<body>
+		<h1>Formulario</h1>
+		<form>
+			<fieldset>
+				<legend>Datos usuario</legend>
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" required maxlength="40" placeholder="email"/>
+				<label for="remail">Repita email: </label>
+				<input type="email" name="remail" id="remail" required maxlength="40" placeholder="email"/> <br/>
+				<label for="clave">Clave: </label>
+				<input type="password" name="clave" id="clave" required maxlength="40" placeholder="clave"/>
+				<label for="reclave">Repira clave: </label>
+				<input type="password" name="reclave" id="reclave" required maxlength="40" placeholder="clave"/> <br/>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<label for="nom">Nombre: </label>
+				<input type="text" name="nom" id="nom" required maxlength="40"/> <br/>
+				<label for="fena">Fecha nacimiento: </label>
+				<input type="date" name="fena" id="fena" min="1/1/1900" max="31/12/2500"/> <br/>
+
+				<label for="sex">Sexo: </label>
+					<input type="radio" name="sex" id="hom" value="Hombre"/>
+					<label for="hom">Hombre</label>
+					<input type="radio" name="sex" id="muj" value="Mujer"/>
+					<label for="muj">Mujer</label>
+				<br/>
+				<label for="tel">Telefono: </label>
+				<input type="text" name="tel" id="tel" maxlength="9" size="9"/>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Estudios / trabajo</legend>
+				<label for="est">Estudios: </label>
+				<select name="est">
+					<option value="gm">Grado medio</option>
+					<option value="gs">Grado superior</option>
+					<option value="gu">Universidad</option>
+				</select> <br/>
+				<label for="idi">Idiomas: </label>
+				<select name="idi" multiple>
+					<option value="eus">Euskera</option>
+					<option value="ing">Inglés</option>
+				</select> <br/>
+				<label for="cv">Adjunta tu CV:</label> <br/>
+				<input type="file" accept=".pdf, .doc, .docx" name="cv" id="cv"/> <br/>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Otros</legend>
+				<label for="num">Elige tu número favorito:</label>
+				<input type="number" name="num" id="num" min="1" max="100"/> <br/>
+				<label for="col">Elige tu color favorito:</label>
+				<input type="color" name="col" id="col"/> <br/>
+				<label for="lqq">Puedes añadir lo que quieras:</label> <br/>
+				<textarea rows="5" cols="15" name="lqq" id="lqq" placeholder="Escribe lo que quieras"></textarea>
+			</fieldset>
+			<br/>
+			<input type="reset" value="Limpiar datos"/>
+			<input type="submit" id="env" value="Enviar datos"/>
+		</form>
+	</body>
+</HTML>
