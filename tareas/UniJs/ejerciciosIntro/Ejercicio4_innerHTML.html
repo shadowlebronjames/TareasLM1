@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 3</title>		
+	</head>
+	<body>
+		<p id="parrafo1">Resultado de los lanzamientos: </p>
+		<script type="text/javascript">
+			document.getElementById("parrafo1").innerHTML += lanzarDados().toString();
+			function lanzarDados() {
+				var dado1;
+				var dado2;
+				var suma;
+				var lanzamientos = [];				
+				for(var i=0; i<100; i++) {
+					dado1 = Math.floor(Math.random() * 6) + 1;
+					dado2 = Math.floor(Math.random() * 6) + 1;
+					suma = dado1 + dado2;
+					//lanzamientos.push(suma);
+					lanzamientos[i] = suma;
+				}
+				return lanzamientos;
+			}
+		</script>		
+	<body>
+</html>
+
+
+
+
+
+

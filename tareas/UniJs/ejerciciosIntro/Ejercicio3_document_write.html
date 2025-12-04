@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 3</title>
+		<script type="text/javascript">
+			var frase1 = "Hola mundo!"
+			var frase2 = "hola mundo!"
+			var frase3 = "HOLA MUNDO!"
+			document.write("<p>La frase '"+ frase1 +"' es " + esMayusOMinus(frase1)+ " </p>");
+			document.write("<p>La frase '"+ frase2 +"' es " + esMayusOMinus(frase2)+ " </p>");
+			document.write("<p>La frase '"+ frase3 +"' es " + esMayusOMinus(frase3)+ " </p>");
+			function esMayusOMinus(frase) {
+				var retorno = "mezcla";
+				var fraseAux = frase.toUpperCase();
+				if(fraseAux == frase) {
+					retorno = "may&uacute;scula";
+				} else {
+					fraseAux = frase.toLowerCase();
+					if(fraseAux == frase) {
+						retorno = "min&uacute;scula";
+					}
+				}
+				return retorno;
+			}
+		</script>	
+	</head>
+	<body>
+		<p>Esta web tiene una etiqueta p con texto.</p>			
+	<body>
+</html>
+
+
+
+
+
