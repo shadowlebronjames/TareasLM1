@@ -17,4 +17,15 @@ function edad(){
 
 /* 02.04 */
 
-var numeroEntero;
+var numeroEntero = 1625;
+alert("El valor de la variable número entero es "+numeroEntero);
+numeroEntero = 375;
+alert(numeroEntero+125);
+
+/* 02.05 */
+
+var palabraTexto = "casa";
+alert(palabraTexto);
+/* Ejecuta y mira si es correcto */
+var palabraTextoLarga = "Hola, que tal, buenos dias, hoy me encuentro con energia para intentar correr."
+alert(palabraTextoLarga);
